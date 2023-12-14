@@ -1,2 +1,2 @@
 #!/bin/bash
-gcci -E $CFILE -o c
+gcci -E $CFILE > c
