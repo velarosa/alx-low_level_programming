@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * Main - Entery point
+ * main - Entery point
  *
  * Description: Program that prints the alphabet in lower case in revers
  *
