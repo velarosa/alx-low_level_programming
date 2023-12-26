@@ -1,21 +1,18 @@
 #include "main.h"
 
 /**
- * main - Entery point
+ * print-alphabet - Make the alphabet
  *
- * Description: A Function that prints the alphabet
- *
- * Return: Always 0 (Success)
+ * Return: void
 */
 
-int main(void)
+void print_alphabet(void)
 {
-	void print_alphabet(void)
+	int i;
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		for (i = 'a'; i <= 'z'; i++)
-		{
-			putchar(i);
-		}
+		putchar(i);
 	}
-	return (0);
+	putchar('\n');
 }
+
