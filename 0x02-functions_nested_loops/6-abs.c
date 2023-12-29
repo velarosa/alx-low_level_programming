@@ -10,8 +10,6 @@
 
 int _abs(int i)
 {
-	int i;
-
 	if (i > 0)
 		_putchar(i);
 	if (i < 0)
