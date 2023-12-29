@@ -16,7 +16,7 @@ int print_sign(int n)
 	return (1);
 	}
 
-	else if (n < 49 && n > 47)
+	else if (n == 48)
 	{
 	_putchar('0');
 	return (0);
@@ -25,6 +25,9 @@ int print_sign(int n)
 	else if (n < 48)
 	{
 	_putchar('-');
-	}
 	return (-1);
+	}
+
+	else
+		return (0);
 }
