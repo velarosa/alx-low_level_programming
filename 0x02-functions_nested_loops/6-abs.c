@@ -13,7 +13,12 @@ int _abs(int i)
 	if (i > 0)
 		_putchar(i);
 	else if (i < 0)
-		_putchar((i * (-1)));
+	{
+		int j = (i * (-1));
+
+		_putchar((j);
+	}
+
 	else
 		_putchar(48);
 	return (0);
