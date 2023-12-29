@@ -2,13 +2,13 @@
 
 /**
  * _abs - Function that computes the absolute value of an integer.
- * @int: the integer that gets checked.
+ * @i: the integer that gets checked.
  * Description: returns the absolute value of givien inreger.
  *
  * Return: Always (0) Success.
 */
 
-int _abs(int)
+int _abs(int i)
 {
 	int i;
 
