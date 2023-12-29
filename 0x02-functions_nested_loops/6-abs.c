@@ -14,9 +14,8 @@ int _abs(int i)
 		_putchar(i);
 	else if (i < 0)
 	{
-		int j = (i * (-1));
-
-		_putchar((j);
+		i = (-1) * i;
+		_putchar(i);
 	}
 
 	else
