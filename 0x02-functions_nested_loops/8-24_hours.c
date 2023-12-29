@@ -17,8 +17,7 @@ void jack_bauer(void)
 	for (i = 0; i <= 2; i++)
 	{
 		for (in = 0; in <= 9; in++)
-			if (i == 2 && (in > 3 | in < 9))
-				_putchar(i + 48);
+			_putchar(i + 48);
 		_putchar(in + 48);
 		_putchar(58);
 	}
