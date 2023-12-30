@@ -12,8 +12,7 @@
 
 void print_to_98(int n)
 {
-	int i; //we declare a new in to be printed so we gett the initial//
-	//number befoor n++ or n-- //
+	int i;
 
 	if (n > 98)
 		for (i = n; i > 98; i--)
