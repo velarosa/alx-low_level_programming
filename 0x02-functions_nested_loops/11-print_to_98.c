@@ -20,7 +20,7 @@ void print_to_98(int n)
 
 	else if (n < 0 && n != 98)
 	{
-		n++
+		n++;
 		printf("%d, ", n);
 	}
 	else if (n == 98)
