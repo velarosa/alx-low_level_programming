@@ -12,16 +12,16 @@
 
 void print_to_98(int n)
 {
-	while (n > 98 && n != 98)
+	int i;
+
+	for (i = n; i > 98; i--)
 	{
-		n--;
-		printf("%d, \n", n);
+		printf("%d, ", i);
 	}
 
-	while (n < 98 && n != 98)
+	for (i = n; n < 98; n++)
 	{
-		n++;
-		printf("%d, \n", n);
+		printf("%d, ", i);
 	}
 	if (n == 98)
 	{
