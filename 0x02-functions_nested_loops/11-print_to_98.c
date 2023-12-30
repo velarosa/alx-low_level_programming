@@ -12,13 +12,14 @@
 
 void print_to_98(int n)
 {
-	int i;
+	int i; //we declare a new in to be printed so we gett the initial//
+	//number befoor n++ or n-- //
 
 	if (n > 98)
 		for (i = n; i > 98; i--)
 			printf("%d, ", i);
 	else
-		for (i = n; i < 98; n++)
+		for (i = n; i < 98; i++)
 			printf("%d, ", i);
 	printf("98\n");
 }
