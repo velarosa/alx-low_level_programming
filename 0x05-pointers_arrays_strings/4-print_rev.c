@@ -13,13 +13,13 @@ void print_rev(char *s)
 {
 	int i, leng, temp;
 
-	leng = _strleng(s);
+	leng = _strlen(s);
 
 	for (i = 0; i < leng / 2; i++)
 	{
 		temp = s[i];
 		s[i] = s[leng - i - 1];
-		s[leng - i - 1] = temp
+		s[leng - i - 1] = temp;
 	}
 	_putchar('\n');
 }
