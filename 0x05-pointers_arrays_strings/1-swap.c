@@ -13,10 +13,12 @@ void swap_int(int *a, int *b)
 {
 	int **pa;
 	int **pb;
+	int n = 0;
 
 	pa = &a;
 	pb = &b;
 
-	**pa = *b;
-	**pb = *a;
+	n = *a;
+	**pa = *b
+	**pb = *n;
 }
