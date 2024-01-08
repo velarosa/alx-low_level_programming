@@ -13,7 +13,7 @@ int _strlen(char *s)
 {
 	int n = 0;
 
-	while (n == *s)
+	while (n >= *s[0] && n <= *s['\0'])
 		printf("%d", n);
-	return n;
+	return (n);
 }
