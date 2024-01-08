@@ -3,20 +3,23 @@
 /**
  * print_rev - Function that prints a string reversed.
  * @s: The string to be printed.
- * Description: Finde the last string in an aray ans print it then the one
- * before it and print it and so on.
+ * Description: Finde the last string in aray ans swap it with
+ * the first till half of of array.
  *
  * Return: Always (void) Success.
 */
 
 void print_rev(char *s)
 {
-	int i = 0;
+	int i, leng, temp;
 
-	while (i == sizeof(s)/sizeof(s[0]) - 1)
+	leng = _strleng(s);
+
+	for (i = 0; i < leng / 2; i++)
 	{
-		_putchar(s[i]);
-		i--;
+		temp = s[i];
+		s[i] = s[leng - i - 1];
+		s[leng - i - 1] = temp
 	}
 	_putchar('\n');
 }
