@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * print_rev - Function that prints a string reversed.
+ * rev_string - Function that prints a string reversed.
  * @s: The string to be printed.
  * Description: Finde the last string in aray ans swap it with
  * the first till half of of array.
@@ -9,7 +9,7 @@
  * Return: Always (void) Success.
 */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int i, leng, temp, half;
 
@@ -22,5 +22,4 @@ void print_rev(char *s)
 		s[i] = s[leng - i - 1];
 		s[leng - i - 1] = temp;
 	}
-	_putchar('\n');
 }
