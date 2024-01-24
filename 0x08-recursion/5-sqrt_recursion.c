@@ -14,6 +14,8 @@ int _sqrt_recursion(int n)
 	return (square(n, 1));
 }
 
+
+int square(int n, int ro);
 /**
  * square - root function.
  * @n: number to calculate.
