@@ -15,7 +15,7 @@ int _sqrt_recursion(int n)
 }
 
 
-int square(int n, int ro);
+
 /**
  * square - root function.
  * @n: number to calculate.
