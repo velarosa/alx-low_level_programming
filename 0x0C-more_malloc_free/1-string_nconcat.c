@@ -2,24 +2,6 @@
 #include <stdlib.h>
 
 /**
- * _strlen - find length of a string.
- * @str: the string.
- * Description: find the length
- *
- * Return: Always (size) Success.
- */
-
-int _strlen(char *str)
-{
-	int size;
-
-	for (; str[size] != '\0'; size++)
-		;
-	return (size);
-}
-
-
-/**
  * string_nconcat - function that concatenates two strings.
  * @s1: first string
  * @s2: seconf string.
@@ -33,7 +15,7 @@ int _strlen(char *str)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *s3;
-	int size1;
+	int size1, size2;
 	unsigned int i, j;
 
 	if (s1 == 0)
@@ -41,7 +23,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == 0)
 		s2 = "";
 
-	size1 = _strlen(s1);
+	for (size1 = 0; s1[size1] != '\0'; size1++)
+		;
+	for (size2 = 0; s2[size2] != '\0'; size2++)
+		;
 
 	s3 = malloc(sizeof(char) * (size1 + n + 1));
 		if (s3 == 0)
