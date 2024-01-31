@@ -15,6 +15,8 @@ char *_strdup(char *str)
 {
 	int size = 0, i = 0; /* size for size of str & i for str[i] = new str[i]*/
 
+	char *nstr;
+
 	if (str == 0) /* if given string is null */
 	{
 		return (NULL);
@@ -27,7 +29,7 @@ char *_strdup(char *str)
 	}
 
 	/* making the new alocated string == to given string + 1 is \0*/
-	char *nstr = malloc(sizeof(*str) * size + 1);
+	*nstr = malloc(sizeof(*str) * size + 1);
 
 	if (nstr == 0) /* if insufficient memory */
 	{
