@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlin.h>
+#include <stdlib.h>
 
 /**
  * alloc_grid - function that returns a pointer to a
