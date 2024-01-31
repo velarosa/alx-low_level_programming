@@ -29,7 +29,7 @@ char *_strdup(char *str)
 	}
 
 	/* making the new alocated string == to given string + 1 is \0*/
-	*nstr = malloc(sizeof(*str) * size + 1);
+	nstr = malloc(sizeof(*str) * size + 1);
 
 	if (nstr == 0) /* if insufficient memory */
 	{
