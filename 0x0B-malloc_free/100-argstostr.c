@@ -51,5 +51,6 @@ char *argstostr(int ac, char **av)
 		mystr[cmpt] = '\n';
 		cmpt++;
 	}
+	mystr[cmpt] = '\0';
 	return (mystr);
 }
