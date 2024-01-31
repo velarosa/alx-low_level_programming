@@ -47,7 +47,7 @@ char *str_concat(char *s1, char *s2)
 	if (s3 == 0)
 		return (0);
 
-	for (i = O; i <= size1 + size2; i++)
+	for (i = 0; i <= size1 + size2; i++)
 	{
 		if (i < size1)
 			s3[i] = s1[i];
