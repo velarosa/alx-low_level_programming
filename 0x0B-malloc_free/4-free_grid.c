@@ -15,6 +15,6 @@ void free_grid(int **grid, int height)
 	int i = 0;
 
 	for (; i < height; i++)
-		free(greed[i]);
-	free(greef);
+		free(grid[i]);
+	free(grid);
 }
