@@ -2,6 +2,23 @@
 #include <stdlib.h>
 
 /**
+ * _strlen - length of a string
+ * @s: given string
+ * Description: find length of a string
+ *
+ * Return: Always (size) Success.
+ */
+
+int _strlen(char *s)
+{
+	int size = 0;
+
+	for (; s[size] != '\0'; size++)
+		;
+	return (size);
+}
+
+/**
  * str_concat - a function that concatenates two strings.
  * @s1: first string.
  * @s2: second string.
@@ -15,39 +32,27 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int size1 = 0, size2 = 0;
-	int i1 = 0, i2 = 0;
+	int size1, size2, i;
 	char *s3;
 
-	if (s1 == 0 || s2 == 0)
+	if (s1 == 0)
+		s1 = "\0";
+	if (s2 == 0)
+		s2 = "\0";
+
+	size1 = _strlen(s1);
+	size2 = _strlen(s2);
+	s3 = malloc((size1 + size2) * sizeof(char) + 1);
+	if (s3 == 0)
+		return (0);
+
+	for (i = O; i <= size1 + size 2; i++)
 	{
-		return ('\0');
+		if (i < size1)
+			s3[i] = s1[i];
+		else
+			s3[i] = s2[i - size1];
 	}
-
-	for (; s1[size1] != '\0'; size1++)
-	{
-		;
-	}
-
-	for (; s2[size2] != '\0'; size2++)
-	{
-		;
-	}
-
-	*s3 = malloc(sizeof(char) * (size1 + size2) + 1);
-
-	if (s3 == NULL)
-	{
-		return (NULL);
-	}
-
-	else
-		for (; i1 < size1; i1++)
-			s3[i1] = s1[i1];
-
-		for (; i2 < size2; i2++, i1++)
-			s3[i1] = s2[i2];
-	s3[i1] = '\0';
-
+	s3[i] = '\0';
 	return (s3);
 }
