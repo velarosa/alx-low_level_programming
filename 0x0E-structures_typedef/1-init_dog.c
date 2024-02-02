@@ -1,5 +1,4 @@
-#include "main.h"
-#include <stdio.h>
+#include "dog.h"
 
 /**
  * init_dog - function that initialize a veriable of type struct dog.
@@ -14,15 +13,10 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct User d;
-
-	d = malloc(sizeof(struct User));
-	if (user == NULL)
-		return (NULL);
-
-	user->name = name;
-	user->age = age;
-	user->owner = owner;
-
-	return (user);
+	if (d)
+	{
+		d->name = name;
+		d->age = age;
+		d->owner = owner;
+	};
 }
