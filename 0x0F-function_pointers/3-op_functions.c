@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "3-calc.h"
 
 /**
  * op_add - Function that calculates the sum of two integers.
@@ -29,10 +29,10 @@ int op_sub(int a, int b)
 	int difference = 0;
 
 	if (a > b)
-		diffrence = a - b;
+		difference = a - b;
 	else
 		difference = b - a;
-	return (diffrence);
+	return (difference);
 }
 
 /**
@@ -65,10 +65,7 @@ int op_div(int a, int b)
 
 	result = a / b;
 	if (b == 0)
-	{
-		printf("Error\n")
-			exit(98);
-	}
+
 	return (result);
 }
 
@@ -86,9 +83,6 @@ int op_mod(int a, int b)
 
 	remainder = a % b;
 	if (b == 0)
-        {
-                printf("Error\n")
-                        exit(98);
-        }
+
 	return (remainder);
 }
