@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stdlib.h>
+#include <string.h>
 
 /**
  * add_node - a function that adds a new node at the beginning of a list.
@@ -25,7 +27,7 @@ list_t *add_node(list_t **head, const char *str)
 			free(new_head);
 			return (NULL);
 		}
-		new_head->len = _strlen(new_head->str);
+		new_head->len = strlen(new_head->str);
 	}
 	new_head->next = *head;
 	*head = new_head;
