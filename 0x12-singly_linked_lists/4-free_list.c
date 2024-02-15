@@ -12,10 +12,10 @@ void free_list(list_t *head)
 {
 	list_t *ptr, *store;
 
-	ptr = head;
 	if (!head)
 		return;
 
+	ptr = head;
 	while (ptr)
 	{
 		store = ptr->next;
