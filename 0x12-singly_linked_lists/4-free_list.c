@@ -16,7 +16,7 @@ void free_list(list_t *head)
 	if (!head)
 		return;
 
-	while (ptt)
+	while (ptr)
 	{
 		store = ptr->next;
 		free(ptr);
