@@ -5,7 +5,10 @@
  * add_node_end - a function that adds a new node at the end of a list.
  * @head: the first node in the list.
  * @str: the given string.
- * Description: if node->next = NULL then node->next = str & str->next = NULL
+ * Description: if node->next = NULL
+ * then node->next = str(temp) & str(temp)->next = NULL
+ *
+ * Return: Always (temp) Success
  */
 
 list_t *add_node_end(list_t **head, const char *str)
