@@ -5,7 +5,7 @@
  * @head: first node in the list.
  * Description: finde the sum of all the nodes.
  *
- * Retuen: sum ? sum : 0
+ * Return: sum ? sum : 0
  */
 
 int sum_listint(listint_t *head)
