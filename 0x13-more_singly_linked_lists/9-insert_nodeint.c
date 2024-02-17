@@ -26,12 +26,13 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	{
 		temp->next = *head;
 		*head = temp;
-		return (temp);
 	}
 	for (count = 0, ptr = *head; (count < idx); ptr = ptr->next, count++)
 	{
 		temp->next = ptr->next;
 		ptr->next = temp;
+		return (temp);
 	}
-	return (temp);
+	free(temp);
+	return (NULL);
 }
