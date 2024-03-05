@@ -11,9 +11,13 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
+	if (index >= n)
+		return (-1);
+
 	int mask = 1 << index;
 	int masked_n = n & mask;
 	int bit = masked_n >> index;
 
 	return (bit);
+
 }
